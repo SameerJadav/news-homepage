@@ -38,7 +38,7 @@ HEADER
   justify-content: space-between;
 }
 
-.header nav {
+#navbar-items {
   display: none;
 }
 
@@ -48,7 +48,7 @@ HEADER
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1;
   margin-bottom: 3%;
   color: var(--Very-dark-blue);
@@ -88,39 +88,39 @@ RIGHT CONTAINER
 .................................
 */
 
-#right-container {
+.right-container {
   background-color: var(--Very-dark-blue);
   color: var(--Off-white);
   padding: 3% 5%;
   margin: 10% 0;
 }
 
-#right-container h2 {
+.right-container h2 {
   color: var(--Soft-orange);
   margin-bottom: 6%;
   font-size: 1.7rem;
   font-weight: 800;
 }
 
-#right-container h3 {
+.right-container h3 {
   font-size: 1.3rem;
   margin-bottom: 4%;
   font-weight: 700;
 }
 
-#right-container h3:hover {
+.right-container h3:hover {
   cursor: pointer;
   color: var(--Soft-orange);
 }
 
-#right-container p {
+.right-container p {
   color: var(--Grayish-blue);
   font-size: 1.1rem;
   margin-bottom: 5%;
   line-height: 1.5;
 }
 
-#right-container hr {
+.right-container hr {
   margin: 4% 0;
 }
 
@@ -166,4 +166,56 @@ CARDS
 .card-text p {
   color: var(--Grayish-blue);
   font-size: 0.9rem;
+}
+
+/* 
+.................................
+BREAKPOINT
+.................................
+*/
+
+@media (min-width: 576px) {
+  .showcase,
+  .bottom,
+  footer {
+    display: flex;
+    gap: 3%;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navbar-items {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--Very-dark-blue);
+  }
+
+  .item:hover {
+    color: var(--Soft-red);
+  }
+
+  .showcase {
+    margin-top: 2%;
+  }
+
+  .right-container,
+  .left-container img {
+    margin-top: 0;
+  }
+
+  .card {
+    margin: 0;
+  }
 }
