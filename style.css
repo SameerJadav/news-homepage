@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+/* 
+.................................
+SHARED CSS
+.................................
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --Soft-orange: #e9ab53;
+  --Soft-red: #f15e50;
+  --Off-white: #fffdfa;
+  --Grayish-blue: #c5c6ce;
+  --Dark-grayish-blue: #5d5f79;
+  --Very-dark-blue: #00001a;
+}
+
+body {
+  margin: 6% 4%;
+}
+
+/* 
+.................................
+HEADER
+.................................
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav {
+  display: none;
+}
+
+.left-container img {
+  width: 100%;
+  margin: 5% 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 3%;
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+/* 
+.................................
+BOTTOM CONTAINER
+.................................
+*/
+
+#bottom-right p {
+  line-height: 1.5;
+  color: var(--Dark-grayish-blue);
+}
+
+#bottom-right button {
+  /* change */
+  border: none;
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  padding: 10px 15px;
+  margin: 5% 0;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+#bottom-right button:hover {
+  cursor: pointer;
+  background-color: var(--Very-dark-blue);
+}
+
+/* 
+.................................
+RIGHT CONTAINER
+.................................
+*/
+
+#right-container {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 3% 5%;
+  margin: 10% 0;
+}
+
+#right-container h2 {
+  color: var(--Soft-orange);
+  margin-bottom: 6%;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+#right-container h3 {
+  font-size: 1.3rem;
+  margin-bottom: 4%;
+  font-weight: 700;
+}
+
+#right-container h3:hover {
+  cursor: pointer;
+  color: var(--Soft-orange);
+}
+
+#right-container p {
+  color: var(--Grayish-blue);
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+
+#right-container hr {
+  margin: 4% 0;
+}
+
+/* 
+.................................
+CARDS
+.................................
+*/
+
+.cards {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 5% 0;
+}
+
+.cards img {
+  width: 150px;
+}
+
+.card-text {
+  margin-left: 15px;
+}
+
+.card-text h3 {
+  font-size: 3rem;
+  color: var(--Grayish-blue);
+  font-weight: 800;
+}
+
+.card-text h4 {
+  font-size: 1.2rem;
+  margin: 5% 0;
+  color: var(--Very-dark-blue);
+  font-weight: 700;
+}
+
+.card-text h4:hover {
+  cursor: pointer;
+  color: var(--Soft-red);
+}
+
+.card-text p {
+  color: var(--Grayish-blue);
+  font-size: 0.9rem;
+}
